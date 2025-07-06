@@ -1,0 +1,14 @@
+# default config
+database:
+  url: "postgres://user:password@localhost/mydb"
+
+output:
+  format: "mermaid"
+  file: "docs/schema.md"
+
+schema:
+  include_views: true
+  exclude_tables:
+    - "migrations"
+    - "schema_migrations"
+  include_tables: []
